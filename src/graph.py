@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 plt.style.use(['dark_background'])
 
-def plot_candles(prices, filename='sample_graph', save=''):
+def plot_candles(prices, filename='sample_graph', save=True):
     """
     Plots a candlestick chart for trainning Neural Networks.
     
@@ -37,4 +37,5 @@ def plot_candles(prices, filename='sample_graph', save=''):
     
     ax.axis('off')
     
-    plt.savefig(filename,dpi=100)
+    if save:
+        plt.savefig(filename,dpi=100)
