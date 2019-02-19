@@ -38,3 +38,30 @@ def calculate_simple_moving_average(rolling_window, close):
     # TODO: Implement Function
     
     return close.rolling(rolling_window).mean()
+
+
+def estimate_volatility(prices, l):
+    """Create an exponential moving average model of the volatility of a stock
+    log return, and return the most recent (last) volatility estimate.
+    
+    Parameters
+    ----------
+    prices : pandas.Series
+        A series of adjusted closing prices for a stock.
+        
+    l : float
+        The 'lambda' parameter of the exponential moving average model. Making
+        this value smaller will cause the model to weight older terms less 
+        relative to more recent terms.
+        
+    Returns
+    -------
+    last_vol : float
+        The last element of your exponential moving averge volatility model series.
+    
+    """
+    log_return = np.log(prices).diff(1)
+    squared_log_return = np.square(log_return)  
+    ewms = squared_log_return.ewm(alpha=1-l).mean()
+    
+    return np.sqrt(ewms.values[-1])
