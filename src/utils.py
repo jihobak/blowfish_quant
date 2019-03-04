@@ -16,6 +16,24 @@ def covariance_matrix(returns):
     -------
     x : np.ndarray
         A numpy ndarray containing the covariance matrix
+    
+
+    ex)
+        Test with a 3 simulated stock return series
+        days_per_year = 252
+        years = 3
+        total_days = days_per_year * years
+
+        return_market = np.random.normal(loc=0.05, scale=0.3, size=days_per_year)
+        return_1 = np.random.uniform(low=-0.000001, high=.000001, size=days_per_year) + return_market
+        return_2 = np.random.uniform(low=-0.000001, high=.000001, size=days_per_year) + return_market
+        return_3 = np.random.uniform(low=-0.000001, high=.000001, size=days_per_year) + return_market
+        returns = np.array([return_1, return_2, return_3])
+
+        try out your function
+        cov = covariance_matrix(returns)
+
+        print(f"The covariance matrix is \n{cov}")
     """
     
     #covariance matrix of returns
