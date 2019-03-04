@@ -2,6 +2,39 @@ import pandas as pd
 import numpy as np
 
 
+def calculate_arithmetic_rate_of_return(close):
+    """
+    Compute returns for each ticker and date in close.
+    
+    Parameters
+    ----------
+    close : DataFrame
+        Close prices for each ticker and date
+    
+    ex)
+                        WVA        WMYT          LUYB         EBAC         QNS
+        2000-08-09  21.05081048 17.01384381   10.98450376  11.24809343 12.96171273
+        2000-08-10  15.63570259 14.69054309   11.35302769 475.74195118 11.95964043
+        2000-08-11 482.34539247 35.20258059 3516.54167823  66.40531433 13.50396048
+        2000-08-12  10.91893302 17.90864387   24.80126542  12.48895419 10.52435923
+        2000-08-13  10.67597197 12.74940144   11.80525758  21.53903949 19.99766037
+        2000-08-14  11.54549538 23.98146843   24.97476306  36.03196210 14.30433232
+    
+    Returns
+    -------
+    arithmnetic_returns : Series
+        arithmnetic_returns at the end of the period for each ticker
+    
+    """
+    returns = (close/close.shift(1))-1
+    cumsum_returns = returns.cumsum(axis =0)
+    sum_of_returns = cumsum_returns.iloc[-1] 
+    
+    mean_returns = sum_of_returns/returns.shape[0]
+    
+    return mean_returns
+
+
 def get_most_volatile(prices):
     """Return the ticker symbol for the most volatile stock.
     
