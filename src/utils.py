@@ -2,6 +2,28 @@ import pandas as pd
 import numpy as np
 
 
+def covariance_matrix(returns):
+    """
+    Takes the return series of a set of stocks
+    and calculates the covariance matrix.
+    
+    Parameters
+    ----------
+    returns : numpy.ndarray
+        2D array containing stock return series in each row.
+                
+    Returns
+    -------
+    x : np.ndarray
+        A numpy ndarray containing the covariance matrix
+    """
+    
+    #covariance matrix of returns
+    cov = np.cov(returns)
+        
+    return cov
+
+
 def calculate_arithmetic_rate_of_return(close):
     """
     Compute returns for each ticker and date in close.
