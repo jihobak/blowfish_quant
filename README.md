@@ -20,25 +20,25 @@ Through projects below, I use python to work with historical stock data, develop
 4. Multi-factor Model
 
 
-#### Trading with Momentum
+#### Trading with Momentum[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%201-Trading_with_Momentum.ipynb)]
 > keyword: stock prices, market mechanics, data processing, stock returns, momentum trading
 
 I implement a momentum trading straegy and test if it has the potential to be profitable. Using historical data, I generate a trading signal based on momentum indicator and perform a statisticla test to conclude if there is alpha in the signal.
 
 
-#### Breakout Strategy
+#### Breakout Strategy[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%202-Breakout%20Strategy.ipynb)]
 > keyword: quant workflow, outliers and filtering signals, regression, time series modeling, volatility, pairs trading and mean reversion
 
 I code and evaluate a breakout signal. I run various scenarios of your model with or without the outliers and decide if the outliers should be kept or not. I use statistical tests to test for normality and to find alpha.
 
 
-#### Smart Beta and Portfolio Optimization
+#### Smart Beta and Portfolio Optimization[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%203-Smart%20Beta%20Portfolio%20and%20Portfolio%20Optimization.ipynb)]
 > keyword: ETFs, Portfolio Risk and Return, Portfolio Optimization
 
 I rebalance the porfolio by calculating the turnover and evaluate the performance of the portfolios by calculating tracking errors.I come up with the portfolio weights by analyzing fundamental data, and by quadratic programming.
 
 
-#### Multi-factor Model
+#### Multi-factor Model[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%204-Multi-factor%20Model.ipynb)]
 > keyword: Factors Models of Returns, Risk Factor Models, Alpha Factors, Advanced Portfolio Optimization with Risk and Alpha Factors Models
 
 Generating multiple alpha factors, I formulate an advanced portfolio optimization problem by working with constraints such as risk models, leverage, market neutrality and limits on factor exposures. 
