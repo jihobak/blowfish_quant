@@ -1,0 +1,15 @@
+# check your docker version and compare with below site
+# https://docs.docker.com/compose/compose-file/compose-versioning/
+version: "3"
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - /home/whaleshark/docker/volumes/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=stockdb
+      - POSTGRES_USER=testid
+      - POSTGRES_PASSWORD=testpw
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    
