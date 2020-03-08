@@ -63,4 +63,4 @@ I built deep learning model to classify the sentiment of messages from StockTwit
 #### Project 7: Combining Signals for Enhanced Alpha
 > keyword: enhanced alpha, machine learning, random forest, overlapping samples.
 
-I combined signals on a random forest for enhanced alpha. I made non-overlapping data from samples to train random trees correctly. I used the end of day from Quotemedia and sector data from Sharadar.
+I combined signals on a random forest for enhanced alpha. I made non-overlapping data from samples to train random trees correctly due to characteristics of financial data. I used the end of day from Quotemedia and sector data from Sharadar.
