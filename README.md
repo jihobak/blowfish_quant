@@ -21,6 +21,7 @@ Through projects below, I use python to work with historical stock data, develop
 5. NLP on Financial Statements
 6. Analyzing Stock Sentiment from Twits
 7. Combining Signals for Enhanced Alpha
+8. BackTesting
 
 #### Project 1. Trading with Momentum[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%201-Trading_with_Momentum.ipynb)]
 > keyword: stock prices, market mechanics, data processing, stock returns, momentum trading
@@ -45,22 +46,22 @@ I rebalance the porfolio by calculating the turnover and evaluate the performanc
 
 Generating multiple alpha factors, I formulate an advanced portfolio optimization problem by working with constraints such as risk models, leverage, market neutrality and limits on factor exposures. 
 
-#### Project 5: NLP on Financial Statements
+#### Project 5: NLP on Financial Statements[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%205:%20NLP%20on%20Financial%20Statements.ipynb)]
 > keyword: nlp, 10-k financial statements
 
 I did NLP Analysis on 10-k financial statements to generate an alpha factor. For the dataset, I used the end of day from Quotemedia and Loughran-McDonald sentiment word lists.
 
-#### Project 6: Analyzing Stock Sentiment from Twits
+#### Project 6: Analyzing Stock Sentiment from Twits[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%206:%20Analyzing%20Stock%20Sentiment%20from%20Twits.ipynb)]
 > keyword: nlp, sentiment analysis, deep learning, pytorch, social media
 
 I built deep learning model to classify the sentiment of messages from StockTwits, a social network for investors and traders. My model predicts if any particular message is positive or negative. From this, I'm be able to generate a signal of the public sentiment for various ticker symbols.
 
-#### Project 6: Analyzing Stock Sentiment from Twits
-> keyword: nlp, sentiment analysis, deep learning, pytorch, social media
-
-I built deep learning model to classify the sentiment of messages from StockTwits, a social network for investors and traders. My model predicts if any particular message is positive or negative. From this, I'm be able to generate a signal of the public sentiment for various ticker symbols.
-
-#### Project 7: Combining Signals for Enhanced Alpha
+#### Project 7: Combining Signals for Enhanced Alpha[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%207:%20Combine%20Signals%20for%20Enhanced%20Alpha.ipynb)]
 > keyword: enhanced alpha, machine learning, random forest, overlapping samples.
 
 I combined signals on a random forest for enhanced alpha. I made non-overlapping data from samples to train random trees correctly due to characteristics of financial data. I used the end of day from Quotemedia and sector data from Sharadar.
+
+#### Project 8: BackTesting[[link](https://nbviewer.jupyter.org/github/jihobak/blowfish_quant/blob/master/Project%208:%20BackTesting.ipynb)]
+> keyword: optimization, transaction cost, attribution, realistic backtest, 
+
+I built a fairly realistic backtester that uses the Barra data with computational efficiency in mind, to allow for a reasonably fast backtest. The backtester will perform portfolio optimization that includes transaction costs.I also use performance attribution to identify the major drivers of your portfolio's profit-and-loss (PnL).
